@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class City extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'postal_code'
+    ];
+
+    // Relasi ke BusRoute (origin)
+    public function originRoutes()
+    {
+        return $this->hasMany(BusRoute::class, 'origin_id');
+    }
+
+    // Relasi ke BusRoute (destination)
+    public function destinationRoutes()
+    {
+        return $this->hasMany(BusRoute::class, 'destination_id');
+    }
+}

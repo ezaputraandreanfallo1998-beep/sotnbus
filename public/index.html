@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTNBUS.COM - Tiket Bus Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-bus"></i>
+                <span>SOTNBUS.COM</span>
+            </div>
+            
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Tiket Bus</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <a href="login.html" class="btn login-btn">Masuk</a>
+                <a href="register.html" class="btn register-btn">Daftar</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Pesan Tiket Bus Online dengan Mudah</h1>
+                <p>Nikmati perjalanan nyaman dengan harga terjangkau ke berbagai kota di Indonesia</p>
+            </div>
+        </section>
+        
+        <!-- Search Form -->
+        <div class="search-container">
+            <h2 class="search-title">Cari Tiket Bus</h2>
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="origin">Kota Asal</label>
+                    <select id="origin" required>
+                        <option value="">Pilih Kota Asal</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="yogyakarta">Yogyakarta</option>
+                        <option value="semarang">Semarang</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="destination">Kota Tujuan</label>
+                    <select id="destination" required>
+                        <option value="">Pilih Kota Tujuan</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="yogyakarta">Yogyakarta</option>
+                        <option value="semarang">Semarang</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Tanggal Keberangkatan</label>
+                    <input type="date" id="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="passengers">Jumlah Penumpang</label>
+                    <select id="passengers">
+                        <option value="1">1 Penumpang</option>
+                        <option value="2">2 Penumpang</option>
+                        <option value="3">3 Penumpang</option>
+                        <option value="4">4 Penumpang</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn search-btn">Cari Tiket</button>
+            </form>
+        </div>
+        
+        <!-- Features Section -->
+        <section class="section">
+            <h2 class="section-title">Kenapa Memilih SOTNBUS?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="feature-title">Pesan Cepat</h3>
+                    <p class="feature-desc">Proses pemesanan tiket yang mudah dan cepat hanya dalam beberapa langkah</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3 class="feature-title">Promo Menarik</h3>
+                    <p class="feature-desc">Dapatkan berbagai promo dan diskon spesial untuk perjalanan Anda</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Aman & Terpercaya</h3>
+                    <p class="feature-desc">Transaksi aman dengan sistem pembayaran yang terjamin keamanannya</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Popular Routes Section -->
+        <section class="section">
+            <h2 class="section-title">Rute Populer</h2>
+            <div class="routes-grid">
+                <div class="route-card">
+                    <div class="route-image">
+                        <span>Jakarta - Bandung</span>
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title">Jakarta - Bandung <span class="route-price">Rp 120.000</span></h3>
+                        <div class="route-details">
+                            <span>08:00 - 12:00</span>
+                            <span>4 Jam</span>
+                        </div>
+                        <a href="#" class="btn route-btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+                
+                <div class="route-card">
+                    <div class="route-image">
+                        <span>Bandung - Yogyakarta</span>
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title">Bandung - Yogyakarta <span class="route-price">Rp 250.000</span></h3>
+                        <div class="route-details">
+                            <span>20:00 - 04:00</span>
+                            <span>8 Jam</span>
+                        </div>
+                        <a href="#" class="btn route-btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+                
+                <div class="route-card">
+                    <div class="route-image">
+                        <span>Surabaya - Jakarta</span>
+                    </div>
+                    <div class="route-content">
+                        <h3 class="route-title">Surabaya - Jakarta <span class="route-price">Rp 350.000</span></h3>
+                        <div class="route-details">
+                            <span>08:00 - 20:00</span>
+                            <span>12 Jam</span>
+                        </div>
+                        <a href="#" class="btn route-btn">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Promo Section -->
+        <section class="promo-section">
+            <h2 class="section-title">Promo Spesial</h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <div class="promo-header">
+                        Diskon 50% User Baru
+                    </div>
+                    <div class="promo-content">
+                        <h3 class="promo-title">Diskon 50% untuk Pemesanan Pertama</h3>
+                        <p class="promo-desc">Gunakan kode promo di bawah untuk mendapatkan diskon 50% pada pemesanan pertama Anda</p>
+                        <span class="promo-code">NEWUSER50</span>
+                    </div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-header">
+                        Cashback 10%
+                    </div>
+                    <div class="promo-content">
+                        <h3 class="promo-title">Cashback 10% Setiap Pembelian</h3>
+                        <p class="promo-desc">Dapatkan cashback 10% untuk semua pembelian tiket bus dengan kode promo berikut</p>
+                        <span class="promo-code">SOTN10</span>
+                    </div>
+                </div>
+                
+                <div class="promo-card">
+                    <div class="promo-header">
+                        Weekend Discount
+                    </div>
+                    <div class="promo-content">
+                        <h3 class="promo-title">Diskon Khusus Akhir Pekan</h3>
+                        <p class="promo-desc">Nikmati diskon 20% untuk perjalanan di hari Jumat, Sabtu, dan Minggu</p>
+                        <span class="promo-code">WEEKEND20</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-bus"></i>
+                    <span>SOTNBUS</span>
+                </div>
+                <p class="footer-about">
+                    SOTNBUS adalah platform pemesanan tiket bus online terpercaya di Indonesia dengan berbagai pilihan rute dan kelas layanan.
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3 class="footer-links">Perusahaan</h3>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Karir</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3 class="footer-links">Layanan</h3>
+                <ul>
+                    <li><a href="#">Tiket Bus</a></li>
+                    <li><a href="#">Promo</a></li>
+                    <li><a href="#">Bantuan</a></li>
+                    <li><a href="#">Hubungi Kami</a></li>
+                    <li><a href="#">Mitra</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3 class="footer-links">Informasi</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Cara Pemesanan</a></li>
+                    <li><a href="#">Pembayaran</a></li>
+                    <li><a href="#">Pengembalian Dana</a></li>
+                    <li><a href="#">Kebijakan Penanganan COVID-19</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2025 SOTNBUS.COM. All Rights Reserved.
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
