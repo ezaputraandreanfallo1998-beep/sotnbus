@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: sotnbus
+    env: docker
+    plan: free
+    branch: main
+    dockerfilePath: Dockerfile
+    rootDir: .
+    autoDeploy: true
